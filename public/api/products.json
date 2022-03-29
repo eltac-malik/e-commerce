@@ -4,111 +4,200 @@
     "title": "Lay's Mevsim Yeşillikli",
     "image": "https://cdn.getir.com/product/5bc97aabb137fb001d751ac7_tr_1609123518121.jpeg",
     "alt": "96 g",
-    "price": 6.36
+    "price": 6.36,
+    "category":"qida"
   },
   {
     "id": 2,
     "title": "Eti Canga",
     "image": "https://cdn.getir.com/product/5f3538dc71a71226677fba17_tr_1624437105104.jpeg",
     "alt": "45 g",
-    "price": 2.85
+    "price": 2.85,
+    "category":"qida"
   },
   {
     "id": 3,
     "title": "Kuzeyden",
     "image": "https://cdn.getir.com/product/5a7b20fd8e19da0004bb27f8_tr_1615375864268.jpeg",
     "alt": "1.5 L",
-    "price": 2.95
+    "price": 2.95,
+    "category":"qida"
   },
   {
     "id": 4,
     "title": "Kızılay Erzincan",
     "image": "https://cdn.getir.com/product/60018c5bca2126d84459c47f_tr_1610788125046.jpeg",
     "alt": "6 x 200 ml",
-    "price": 5.90
+    "price": 5.90,
+    "category":"qida"
   },
   {
     "id": 5,
     "title": "Ülker Napoliten",
     "image": "https://cdn.getir.com/product/574b2219dee8a90300f18d24_tr_1599938278519.jpeg",
     "alt": "33 g",
-    "price": 3.30
+    "price": 3.30,
+    "category":"qida"
   },
   {
     "id": 6,
     "title": "Kavrulmuş Siyah Ay Çekirdeği",
     "image": "https://cdn.getir.com/product/5ccaf4ff1a1763000175a869_tr_1580904995656.jpeg",
     "alt": "180 g",
-    "price": 10.95
+    "price": 10.95,
+    "category":"qida"
   },
   {
     "id": 7,
     "title": "Magnum Badem",
     "image": "https://cdn.getir.com/product/559fec01f462100c00461d5c_tr_1618323765236.jpeg",
     "alt": "100 ml",
-    "price": 7.50
+    "price": 7.50,
+    "category":"qida"
   },
   {
     "id": 8,
     "title": "İçim %3 Yağlı Süt",
     "image": "https://cdn.getir.com/product/5ced482d4a8a2a000137da6d_tr_1623652387464.jpeg",
     "alt": "1 L",
-    "price": 7.95
+    "price": 7.95,
+    "category":"qida"
   },
   {
     "id": 9,
     "title": "Lay's Mevsim Yeşillikli",
     "image": "https://cdn.getir.com/product/5bc97aabb137fb001d751ac7_tr_1609123518121.jpeg",
     "alt": "96 g",
-    "price": 6.36
+    "price": 6.36,
+    "category":"qida"
   },
   {
     "id": 10,
     "title": "Eti Canga",
     "image": "https://cdn.getir.com/product/5f3538dc71a71226677fba17_tr_1624437105104.jpeg",
     "alt": "45 g",
-    "price": 2.85
+    "price": 2.85,
+    "category":"qida"
   },
   {
     "id": 11,
     "title": "Kuzeyden",
     "image": "https://cdn.getir.com/product/5a7b20fd8e19da0004bb27f8_tr_1615375864268.jpeg",
     "alt": "1.5 L",
-    "price": 2.95
+    "price": 2.95,
+    "category":"qida"
   },
   {
     "id": 12,
     "title": "Kızılay Erzincan",
     "image": "https://cdn.getir.com/product/60018c5bca2126d84459c47f_tr_1610788125046.jpeg",
     "alt": "6 x 200 ml",
-    "price": 5.90
+    "price": 5.90,
+    "category":"qida"
   },
   {
     "id": 13,
     "title": "Ülker Napoliten",
     "image": "https://cdn.getir.com/product/574b2219dee8a90300f18d24_tr_1599938278519.jpeg",
     "alt": "33 g",
-    "price": 3.30
+    "price": 3.30,
+    "category":"qida"
   },
   {
     "id": 14,
     "title": "Kavrulmuş Siyah Ay Çekirdeği",
     "image": "https://cdn.getir.com/product/5ccaf4ff1a1763000175a869_tr_1580904995656.jpeg",
     "alt": "180 g",
-    "price": 10.95
+    "price": 10.95,
+    "category":"qida"
   },
   {
     "id": 15,
     "title": "Magnum Badem",
     "image": "https://cdn.getir.com/product/559fec01f462100c00461d5c_tr_1618323765236.jpeg",
     "alt": "100 ml",
-    "price": 7.50
+    "price": 7.50,
+    "category":"qida"
   },
   {
     "id": 16,
     "title": "İçim %3 Yağlı Süt",
     "image": "https://cdn.getir.com/product/5ced482d4a8a2a000137da6d_tr_1623652387464.jpeg",
     "alt": "1 L",
-    "price": 7.95
+    "price": 7.95,
+    "category":"qida"
+  },
+  {
+    "id":17,
+    "title":"Colgate Optik White",
+    "image":"https://cdn.getir.com/product/5c3f4bdcf9ba5f0001e7b0d9_tr_1609902603858.jpeg",
+    "alt":"75ml",
+    "price":39.90,
+    "category":"qida"
+  },
+  {
+    "id":18,
+    "title":"Nuh'un Ankara Spaghetti",
+    "image":"https://cdn.getir.com/product/559fb12df462100c00461494.jpeg",
+    "alt":"500 g",
+    "price":7.50,
+    "category":"qida"
+  },
+  {
+    "id":19,
+    "title":"ttec Rio Kulaklık",
+    "image":"https://cdn.getir.com/product/5d396c817e10840001b69e50_tr_1633087074079.jpeg",
+    "alt":"Siyah",
+    "price":79.90,
+    "category":"tech"
+  },
+  {
+    "id":20,
+    "title":"taks Taşınabilir Hoparlör",
+    "image":"https://cdn.getir.com/product/60d1bedcb2d16d680d91b92f_tr_1624875462028.jpeg",
+    "alt":"Kırmızı",
+    "price":269.00,
+    "category":"tech"
+  },
+  {
+    "id":21,
+    "title":"Üzüm",
+    "image":"https://cdn.getir.com/product/5f2162a356b9b125791d57ba_tr_1596543638749.jpeg",
+    "alt":"500 g",
+    "price":6.31,
+    "category":"qida"
+  },
+  {
+    "id":22,
+    "title":"Hertane Kuru Sele Zeytin",
+    "image":"https://cdn.getir.com/product/6012c56c18495db74f09d75c_tr_1638949311938.jpeg",
+    "alt":"400 g",
+    "price":47.65,
+    "category":"qida"
+  },
+  {
+    "id":23,
+    "title":"Balparmak Çiçek Balı",
+    "image":"https://cdn.getir.com/product/5683e84c06df100f0046fc8f_tr_1609395786468.png",
+    "alt":"350 g",
+    "price":50.03,
+    "category":"qida"
+  },
+  {
+    "id":24,
+    "title":"Nutella Kakaolu Fındık Kreması",
+    "image":"https://cdn.getir.com/product/5d1df4b81976b40001fdc590_tr_1602050602002.jpeg",
+    "alt":"750 g",
+    "price":44.14,
+    "category":"qida"
+  },
+  {
+    "id":25,
+    "title":"CP Piliç Lokum",
+    "image":"https://cdn.getir.com/product/5ee1d6d05398f97f3bfa7a6b_tr_1601151033199.jpeg",
+    "alt":"300 g",
+    "price":29.90,
+    "category":"qida"
   }
+
 ]

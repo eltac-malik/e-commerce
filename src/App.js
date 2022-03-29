@@ -3,7 +3,6 @@ import Nav from './components/Navbar'
 import Head from './components/Head';
 import Product from './components/Product';
 import Men from './components/Men';
-import Info from './components/Info';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Head/>
       <Product/>
       <Men/>
-      <Info/>
       <Footer/>
     </div>
   );

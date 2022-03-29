@@ -1,78 +1,55 @@
-import React from 'react'
-import jack1 from '../img/jack1.png'
-import jack2 from '../img/jack2.png'
-import jack3 from '../img/jack3.png'
+import { useState, useEffect } from "react";
+import axios from "axios";  
 
 function Product() {
-    return (
-        <div>
+  const [data, setData] = useState([]);
 
+  useEffect(() => {
+    axios
+      .get("./api/products.json")
+      .then((resp) => setData(resp.data))
+      .catch((err) => console.log(err));
+  }, []);
 
+  console.log(data);
 
-            <section id="products" className="container mt-5">
-                <h1>Woman Jacket</h1>
-                <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
-                    <div className="col">
-                        <div className="card h-100 penguin-card-border shadow rounded">
-                            <img src={jack1} className="card-img-top penguin-card-img w-75" />
-                            <div className="card-body">
-                                <h5 className="card-title">Yellow Coat Jacket</h5>
-                                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, neque.</p>
-                            </div>
-                            <div className="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                                <div>
-                                    <h3 className="price-text-style">$234</h3>
-                                </div>
-                                <div>
-                                    <button type="button" className="btn penguin-btn"><i className="fa fa-shopping-cart"></i> BUY NOW</button>
-                                </div>
-                            </div>
-                        </div>
+  return (
+    <div>
+      <section id="products" className="container mt-5">
+        <h1>Products</h1>
+        
+        <div className="container">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+            
+            {data.map((e,i)=>
+            {
+                return(
+                    <div key={i} className="col mb-4">
+                    <div className="card c">
+                      <img
+                        src={e.image}
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body c-body">
+                        <h5 className="card-title c-title">{e.title}</h5>
+                        <p className="card-text c-text">
+                            {e.alt}
+                            <a href="">Add</a>
+                        </p>
+                      </div>
                     </div>
-                    <div className="col">
-                        <div className="card h-100 penguin-card-border shadow rounded">
-                            <img src={jack2} className="card-img-top penguin-card-img w-75" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">Ladies Jacket</h5>
-                                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, minus!</p>
-                            </div>
-                            <div className="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                                <div>
-                                    <h3 className="price-text-style">$234</h3>
-                                </div>
-                                <div>
-                                    <button type="button" className="btn penguin-btn"><i className="fa fa-shopping-cart"></i> BUY NOW</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card h-100 penguin-card-border shadow rounded">
-                            <img src={jack3} className="card-img-top penguin-card-img w-75" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">Woman Leather Jacket</h5>
-                                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi.</p>
-                            </div>
-                            <div className="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                                <div>
-                                    <h3 className="price-text-style">$234</h3>
-                                </div>
-                                <div>
-                                    <button type="button" className="btn penguin-btn"><i className="fa fa-shopping-cart"></i> BUY NOW</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-              
-              
-                </div>
+                  </div>
+                )
+            })}
+            
+            
 
-            </section>
-
-
-
+          </div>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
 
-export default Product
+export default Product;

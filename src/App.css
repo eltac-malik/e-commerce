@@ -58,9 +58,66 @@ h1{
   padding: 3% 1% 1% 1%;
 }
 
+
 .card
 {
-  max-width: 540px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.c
+{
+  padding: 0 10px;
+}
+
+.c-title
+{
+  position: absolute;
+  bottom: 25%;
+}
+
+.c-body
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.c-text
+{
+  width: 170px;
+  position: absolute;
+  bottom: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.card-text a
+{
+  padding-top: 2px;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid purple;
+  background-color: #fff;
+  color: purple;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card-text a:hover
+{
+  border: none;
+  color: white;
+  background-color: purple;
+  transition: 0.4s;
 }
 
 .card:hover{
