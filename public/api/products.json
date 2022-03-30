@@ -198,6 +198,47 @@
     "alt":"300 g",
     "price":29.90,
     "category":"qida"
+  },
+  {
+    "id":26,
+    "title":"Sek %3 Yağlı Barista Sütü",
+    "image":"https://cdn.getir.com/product/5d9f05637cb438b48c2e0c12_tr_1589468554107.jpeg",
+    "alt":"1 LT",
+    "price":15.85,
+    "category":"qida"
+  },
+  {
+    "id":27,
+    "title":"Taciroğlu Tulum",
+    "image":"https://cdn.getir.com/product/5ced482ed349d10001e70544_tr_1630679028032.jpeg",
+    "alt":"250 gr",
+    "price":33.75,
+    "category":"qida"
+  },
+  {
+    "id":28,
+    "title":"Filiz Fiyonk",
+    "image":"https://cdn.getir.com/product/5cf27249130f3a00011f4d99_tr_1586450111921.jpeg",
+    "alt":"500 gr",
+    "price":7.55,
+    "category":"qida"
+  },
+  {
+    "id":29,
+    "title":"Dardanel Zeytinyağlı Ton",
+    "image":"https://cdn.getir.com/product/5e9d569eca76537bc73182b9_tr_1604781892181.jpeg",
+    "alt":"150 gr",
+    "price":37.36,
+    "category":"qida"
+  },
+  {
+    "id":30,
+    "title":"Tat Jalapeno Biber Turşusu",
+    "image":"https://cdn.getir.com/product/5d03bb6789c5f10001c36b45_tr_1597516999634.jpeg",
+    "alt":"330 gr",
+    "price":16.40,
+    "category":"qida"
   }
+
 
 ]

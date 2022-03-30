@@ -1,17 +1,13 @@
-import { useState, useEffect } from "react";
-import axios from "axios";  
+import { useContext } from "react";
+import {BrowserRouter as Router,Routes,Route,Link,useNavigate
+} from "react-router-dom";
+import  Context from "../context/Context";
 
 function Product() {
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("./api/products.json")
-      .then((resp) => setData(resp.data))
-      .catch((err) => console.log(err));
-  }, []);
+  const product = useContext(Context);
 
-  console.log(data);
+  
 
   return (
     <div>
@@ -21,10 +17,10 @@ function Product() {
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
             
-            {data.map((e,i)=>
+            {product.map((e)=>
             {
                 return(
-                    <div key={i} className="col mb-4">
+                    <div key={e.id} className="col mb-4">
                     <div className="card c">
                       <img
                         src={e.image}
@@ -34,8 +30,8 @@ function Product() {
                       <div className="card-body c-body">
                         <h5 className="card-title c-title">{e.title}</h5>
                         <p className="card-text c-text">
-                            {e.alt}
-                            <a href="">Add</a>
+                            {e.price} AZN
+                            <button className="btn btn-danger">Add</button>
                         </p>
                       </div>
                     </div>
@@ -43,7 +39,7 @@ function Product() {
                 )
             })}
             
-            
+
 
           </div>
         </div>

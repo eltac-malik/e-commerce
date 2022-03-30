@@ -7,7 +7,7 @@ function Men() {
     return (
         <div>
             
-            <section className="container mt-5">
+            <section className="container mrgn mt-5">
       <h1 className="penguin-catagory">Man Jacket</h1>
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
         <div className="col">
