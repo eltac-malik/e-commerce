@@ -1,16 +1,27 @@
-import { useContext } from "react";
+import { useContext , useState} from "react";
 import {BrowserRouter as Router,Routes,Route,Link,useNavigate
 } from "react-router-dom";
 import  Context from "../context/Context";
+import Modal from "./Modal";
+import ModalAbout from "./Modal";
 
 function Product() {
 
   const product = useContext(Context);
 
-  
+  const [aboutdata,setAboutdata] = useState({});
+  const [isModal,setisModal] = useState(false);
+
+
+  const handleCard = (e)=>
+  {
+    console.log(e.target.name)
+  }
+
 
   return (
     <div>
+      {isModal && <Modal data={aboutdata} closeModal={()=>{setisModal(false)}} />}
       <section id="products" className="container mt-5">
         <h1>Products</h1>
         
@@ -21,7 +32,11 @@ function Product() {
             {
                 return(
                     <div key={e.id} className="col mb-4">
-                    <div className="card c">
+                    <div className="card c"
+                     data-toggle="modal" data-target="#exampleModal"
+                     onClick={()=> {setAboutdata({id:e.id,price:e.price,title:e.title})
+                     setisModal(true)
+                  }} >
                       <img
                         src={e.image}
                         className="card-img-top"

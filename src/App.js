@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Nav/>
         <Routes>
-        <Route path="/head" element={<Head/>} />
+        <Route path="/" element={<Head/>} />
         <Route path="/product" element={<Product/>}/>
         <Route path="/men" element={<Men/>}/>
         
