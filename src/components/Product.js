@@ -33,8 +33,8 @@ function Product() {
                 return(
                     <div key={e.id} className="col mb-4">
                     <div className="card c"
-                     data-toggle="modal" data-target="#exampleModal"
-                     onClick={()=> {setAboutdata({id:e.id,price:e.price,title:e.title})
+                     data-toggle="modal" data-target="#myModal"
+                     onClick={()=> {setAboutdata({id:e.id,price:e.price,title:e.title,image:e.image,alt:e.alt,category:e.category})
                      setisModal(true)
                   }} >
                       <img

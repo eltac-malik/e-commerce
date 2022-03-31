@@ -158,3 +158,44 @@ h1{
   transition: 0.4s;
 }
 
+
+.mod-header
+{
+  padding: 10px 20px 0 20px;
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid silver;
+}
+
+.modal-body img
+{
+  width: 100%;
+} 
+
+.modal-body button
+{
+  position: absolute;
+}
+
+.fa-xmark:hover
+{
+  color: red;
+}
+
+.ab-btn
+{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.modal-footer
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
