@@ -12,21 +12,10 @@ function Product() {
   const [aboutdata,setAboutdata] = useState({});
   const [isModal,setisModal] = useState(false);
   
-    const [inp,setInput] = useState("");
+  const [search,setSearch] = useState("");
   
 
-    const handleInput = (e) =>
-    {
-      setInput(e.target.value);
 
-      product.data.forEach(x =>
-        {
-          if (inp === x.title)
-          {
-            console.log("salam")
-          }
-        });
-    }
 
   return (
     <div>
@@ -34,7 +23,7 @@ function Product() {
 
         <div className="filter">
           <div className="input">
-            <input type="text" onChange={handleInput} />
+            <input type="text" placeholder="Search Product" onChange={e => setSearch(e.target.value)}/>
             </div>
         </div>
       <section id="products" className="container mt-5">
@@ -42,7 +31,17 @@ function Product() {
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
             
-            {product.data.map((e)=>
+            {product.data.filter(val =>
+            {
+              if (search === "")
+              {
+                return val  
+              }
+              else if (val.title.toLowerCase().includes(search.toLocaleLowerCase()))
+              {
+                  return val;
+              }
+            }).map((e)=>
             {
                 return(
                     <div key={e.id} className="col mb-4">
@@ -57,11 +56,11 @@ function Product() {
                         alt="..."
                       />
                       <div className="card-body c-body">
-                        <h5 className="card-title c-title">{e.title}</h5>
-                        <p className="card-text c-text">
+                        <h4 className="card-title c-title">{e.title}</h4>
+                        <h5 className="card-text c-text">
                             {e.price} AZN
                             <button className="btn btn-danger">Add</button>
-                        </p>
+                        </h5>
                       </div>
                     </div>
                   </div>

@@ -9,6 +9,7 @@ import {BrowserRouter as Router,Routes,Route,Link,Navigate
 } from "react-router-dom";
 import { Prov, ProvLog } from './context/Context';
 import LogIn from './components/LogIn';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/home" element={<Head/>} />
         <Route path="/product" element={<Product/>}/>
         <Route path="/men" element={<Men/>}/>
+        <Route path="/profile" element={<Profile/>}/>
         
         </Routes>
        <Footer/>

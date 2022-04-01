@@ -44,8 +44,16 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <i class="fa-solid fa-box-open nav-item"><sup>1</sup></i>
+                </li>
+                <li className="nav-item">
+                <Link to="/profile" className="nav-link">
                 <img src={profile.currentuser.avatar} width="40" height="40" className="rounded-circle"/>
+                </Link>
+                </li>
+                <li className="nav-item">
+                <Link to="/login" className="nav-link">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </Link>
                 </li>
               </ul>

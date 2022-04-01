@@ -238,6 +238,86 @@
     "alt":"330 gr",
     "price":16.40,
     "category":"qida"
+  },
+  {
+    "id":31,
+    "title":"ACE Klassik",
+    "image":"https://cdn.getir.com/product/6050b714cb3aea1cfeaf01a3_tr_1632835369035.jpeg",
+    "alt":"4 LT",
+    "price":27.37,
+    "category":"temizlik"
+  },
+  {
+    "id":32,
+    "title":"Vanish Halı Leke Çıkarıcı",
+    "image":"https://cdn.getir.com/product/5bb713c65902b20017b0e874_tr_1622728039390.jpeg",
+    "alt":"500 ml",
+    "price":43.24,
+    "category":"temizlik"
+  },
+  {
+    "id":33,
+    "title":"Kemal Kükrer Beyaz Sirke",
+    "image":"https://cdn.getir.com/product/5ced482ad349d10001e70512_tr_1598732135370.jpeg",
+    "alt":"2 LT",
+    "price":19.25,
+    "category":"temizlik"
+  },
+  {
+    "id":34,
+    "title":"Ariel Parlak Renkler",
+    "image":"https://cdn.getir.com/product/5da5a2179cba107a131bf4a5_tr_1579102179864.jpeg",
+    "alt":"5 LT",
+    "price":45.75,
+    "category":"temizlik"
+  },
+  {
+    "id":35,
+    "title":"Yumoş Extra Lilyum",
+    "image":"https://cdn.getir.com/product/5ac780d556352c000435251f_tr_1648111429270.jpeg",
+    "alt":"1440 ml",
+    "price":36.60,
+    "category":"temizlik"
+  },
+  {
+    "id":36,
+    "title":"Mandalina",
+    "image":"https://cdn.getir.com/product/5bbb7a3646559c001e5a77b5_tr_1636582560894.jpeg",
+    "alt":"1 Kq",
+    "price":17.45,
+    "category":"qida"
+  },
+  {
+    "id":37,
+    "title":"Ülker Biskrem Kakao",
+    "image":"https://cdn.getir.com/product/5b6c4158ac68fd0004af28c4_tr_1602361244816.jpeg",
+    "alt":"184 qr",
+    "price":5.50,
+    "category":"qida"
+  },
+  {
+    "id":38,
+    "title":"Krem Sıvı Sabun",
+    "image":"https://cdn.getir.com/product/5e6b59d5370b07ce0c123ee1_tr_1603570571382.jpeg",
+    "alt":"300 ml",
+    "price":27.37,
+    "category":"temizlik"
+  },
+  {
+    "id":39,
+    "title":"Ultra Koruma Sıvı Sabun",
+    "image":"https://cdn.getir.com/product/5e6a0ad7d21bd81074d9f507_tr_1603570600663.jpeg",
+    "alt":"300 ml",
+    "price":27.37,
+    "category":"temizlik"
+  },
+  {
+    "id":40,
+    "title":"Privacy Erkek Hediye Seti",
+    "image":"https://cdn.getir.com/product/5fdccb7e8846ce38d56c92c2_tr_1608879840625.jpeg",
+    "alt":"2 eded",
+    "price":149.90,
+    "category":"temizlik"
   }
 
 
