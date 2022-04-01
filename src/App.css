@@ -1,8 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 *{
   border: 0;
   padding: 0;
   font-family: 'Bebas Neue', cursive;
 }
+
+
+.bg-body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(135deg, #4d262e, #af374b);
+}
+
+.containers {
+  background-color: #fdfdfd;
+  width: 350px;
+  height: 350px;
+  box-shadow: 15px 30px 30px rgba(0, 0, 0, 0.32);
+  border-radius: 0 5px 5px 5px;
+  position: relative;
+}
+
+.tops {
+  width: 40%;
+  height: 35px;
+  position: absolute;
+  top: -10%;
+  background-color: #fdfdfd;
+  transform: perspective(5px) rotateX(0.93deg);
+  border-radius: 6px 6px 0 0;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
+.titles {
+  width: 40%;
+  height: 35px;
+  position: absolute;
+  top: -10%;
+  padding: 10px 20px;
+}
+.icons {
+  width: 20px;
+  height: 20px;
+
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDQxNi4yMjkgNDE2LjIyOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDE2LjIyOSA0MTYuMjI5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQwMy43MjksMjkuNjVINzEuODAyYy02LjkwMywwLTEyLjUsNS41OTctMTIuNSwxMi41djg2LjM2M2MwLDYuOTAzLDUuNTk3LDEyLjUsMTIuNSwxMi41czEyLjUtNS41OTcsMTIuNS0xMi41VjU0LjY1ICAgIGgzMDYuOTI3djMwNi45MjhIODQuMzAydi03My44NjFjMC02LjkwMy01LjU5Ny0xMi41LTEyLjUtMTIuNXMtMTIuNSw1LjU5Ny0xMi41LDEyLjV2ODYuMzYxYzAsNi45MDMsNS41OTcsMTIuNSwxMi41LDEyLjUgICAgaDMzMS45MjdjNi45MDIsMCwxMi41LTUuNTk3LDEyLjUtMTIuNVY0Mi4xNUM0MTYuMjI5LDM1LjI0Nyw0MTAuNjMxLDI5LjY1LDQwMy43MjksMjkuNjV6IiBmaWxsPSIjODczMTRlIi8+CgkJPHBhdGggZD0iTTE4NS40MTcsMjg3LjgxMWMwLDUuMDU3LDMuMDQ1LDkuNjEzLDcuNzE2LDExLjU1YzEuNTQ3LDAuNjQyLDMuMTcsMC45NSw0Ljc4MSwwLjk1YzMuMjUzLDAsNi40NTEtMS4yNyw4Ljg0Mi0zLjY2ICAgIGw3OS42OTctNzkuNjk3YzIuMzQ0LTIuMzQ0LDMuNjYtNS41MjMsMy42Ni04LjgzOWMwLTMuMzE2LTEuMzE2LTYuNDk1LTMuNjYtOC44MzlsLTc5LjY5Ny03OS42OTcgICAgYy0zLjU3NS0zLjU3NS04Ljk1MS00LjY0Ni0xMy42MjMtMi43MWMtNC42NzEsMS45MzYtNy43MTYsNi40OTMtNy43MTYsMTEuNTQ5djY3LjE5N0gxMi41Yy02LjkwMywwLTEyLjUsNS41OTctMTIuNSwxMi41ICAgIGMwLDYuOTAzLDUuNTk3LDEyLjUsMTIuNSwxMi41aDE3Mi45MTdWMjg3LjgxMUwxODUuNDE3LDI4Ny44MTF6IE0yMTAuNDE3LDE1OC41OTRsNDkuNTIxLDQ5LjUybC00OS41MjEsNDkuNTIxVjE1OC41OTR6IiBmaWxsPSIjODczMTRlIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+
+  margin: 3px 10px 0px 5px;
+  position: relative;
+  float: left;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.texts {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.emails,
+.passs,
+.remembers {
+  width: 100%;
+  display: inline-table;
+  padding: 5px 20px;
+  margin-bottom: 2px;
+}
+
+.remembers input
+{
+  margin-right: 10px;
+}
+
+.emails label,
+.passs label {
+  float: left;
+  width: 100%;
+  top: 0px;
+  color: #032942;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.remembers label {
+  float: left;
+  padding: 5px 0px;
+  line-height: 1.7;
+  width: 100%;
+  top: 0px;
+  color: #032942;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.bodys {
+  padding: 60px 30px;
+  display: table;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 32px;
+  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: none;
+  display: inline;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 400;
+  float: left;
+  -webkit-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.05),
+    1px 1px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.05),
+    1px 1px 0px rgba(255, 255, 255, 1);
+  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.05),
+    1px 1px 0px rgba(255, 255, 255, 1);
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #f8f8c6;
+  outline: 0;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #87314e;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.footer:hover {
+  background: #5e1a31;
+}
+
+#email,
+#pass {
+  transition: all 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
 .penguin-logo{
   width: 200px;
 }
@@ -198,4 +361,60 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.nav-cont
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.nav-icon
+{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.navbar-ul
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item
+{
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.nav-link
+{
+  color: darkcyan;
+}
+.nav-link:hover
+{
+  color: rgb(1, 85, 85);
+  text-decoration: none;
+}
+
+.fa-shop:hover
+{
+  color: rgb(1, 85, 85);
+}
+
+.bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }

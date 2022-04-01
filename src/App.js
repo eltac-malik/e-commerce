@@ -5,28 +5,28 @@ import Product from './components/Product';
 import Men from './components/Men';
 import Footer from './components/Footer';
 import About from './components/About';
-import {BrowserRouter as Router,Routes,Route,Link,useNavigate
+import {BrowserRouter as Router,Routes,Route,Link,Navigate
 } from "react-router-dom";
-import { Prov } from './context/Context';
+import { Prov, ProvLog } from './context/Context';
+import LogIn from './components/LogIn';
 
 function App() {
   return (
     <div className="App">
 
-
-    <Prov>
+   <Prov>
     <Router>
       <Nav/>
-        <Routes>
-        <Route path="/" element={<Head/>} />
+        <Routes>  
+        <Route path="/" element={<Navigate replace to="/login" />} /> 
+        <Route path='/login' element = {<LogIn/>}></Route>
+        <Route path="/home" element={<Head/>} />
         <Route path="/product" element={<Product/>}/>
         <Route path="/men" element={<Men/>}/>
         
         </Routes>
+       <Footer/>
       </Router>
-
-      <Footer/>
-
     </Prov>
 
     </div>
