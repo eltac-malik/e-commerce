@@ -8,23 +8,37 @@ import ModalAbout from "./Modal";
 function Product() {
 
   const product = useContext(Context);
-
+  
   const [aboutdata,setAboutdata] = useState({});
   const [isModal,setisModal] = useState(false);
+  
+    const [inp,setInput] = useState("");
+  
 
+    const handleInput = (e) =>
+    {
+      setInput(e.target.value);
 
-  const handleCard = (e)=>
-  {
-    console.log(e.target.name)
-  }
-
+      product.data.forEach(x =>
+        {
+          if (inp === x.title)
+          {
+            console.log("salam")
+          }
+        });
+    }
 
   return (
     <div>
       {isModal && <Modal data={aboutdata} closeModal={()=>{setisModal(false)}} />}
+
+        <div className="filter">
+          <div className="input">
+            <input type="text" onChange={handleInput} />
+            </div>
+        </div>
       <section id="products" className="container mt-5">
         <h1>Products</h1>
-        
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
             

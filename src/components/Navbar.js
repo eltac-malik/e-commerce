@@ -9,7 +9,6 @@ function Navbar() {
 
   const profile = useContext(Context);
 
-  console.log(profile);
 
   useEffect(() => {
     axios

@@ -17,7 +17,7 @@
 }
 
 .containers {
-  background-color: #fdfdfd;
+  background-color: #fdfdfd; 
   width: 350px;
   height: 350px;
   box-shadow: 15px 30px 30px rgba(0, 0, 0, 0.32);
@@ -155,15 +155,6 @@ input[type="password"]:focus {
 #pass {
   transition: all 0.2s;
 }
-
-
-
-
-
-
-
-
-
 
 
 .penguin-logo{
@@ -369,7 +360,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8%;
+  padding: 0 8%; 
 }
 
 .nav-icon
@@ -417,4 +408,34 @@ h1{
 
 .bg-custom-2 {
 background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.filter
+{
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input
+{
+  width: 40%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input input
+{
+  width: 100%;
+  height: 100%;
+  border: 1px solid silver;
+  font-size: 30px;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 10px;
 }
