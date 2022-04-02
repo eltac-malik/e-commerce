@@ -361,6 +361,8 @@ h1{
   align-items: center;
   justify-content: space-between;
   padding: 0 8%; 
+  width: 100%;
+  position: sticky;
 }
 
 .nav-icon
@@ -438,4 +440,21 @@ background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   padding-left: 15px;
   outline: none;
   border-radius: 10px;
+}
+
+.car-img
+{
+  width: 100%;
+}
+
+.carousel-inner
+{
+  width: 100%;
+  height: 550px;
+}
+
+
+.item img
+{
+  width: 100%;
 }

@@ -18,20 +18,14 @@ export const Prov = ({children}) =>
 
     
     const [users, setUsers] = useState("");
-
-     const getdata = async () => {
-         const users1 = await axios.get("https://reqres.in/api/users?page=1")
-         .then(resp => resp.data.data)
-         const users2 = await axios.get("https://reqres.in/api/users?page=2")
-         .then(resp => resp.data.data)
-
-         const allusers = [...users1,...users2]
-         setUsers(allusers);
-     }
     const [currentuser,setCurrentuser] = useState([]);
+
  
     useEffect(()=>{
-      getdata();
+      axios
+      .get("./api/users.json")
+      .then((resp) => setUsers(resp.data))
+      .catch((err) => console.log(err));
       
     },[])
     
