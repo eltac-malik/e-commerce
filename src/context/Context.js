@@ -20,6 +20,7 @@ export const Prov = ({children}) =>
     const [users, setUsers] = useState("");
     const [currentuser,setCurrentuser] = useState([]);
 
+    const [countProduct,setCountProduct] = useState(0);
  
     useEffect(()=>{
       axios
@@ -30,7 +31,7 @@ export const Prov = ({children}) =>
     },[])
     
     
-    const values = {data,users,setCurrentuser,currentuser}
+    const values = {data,users,setCurrentuser,currentuser,countProduct,setCountProduct}
     
 
   return <Context.Provider value={values}>{children}</Context.Provider>

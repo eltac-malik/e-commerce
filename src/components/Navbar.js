@@ -23,7 +23,7 @@ function Navbar() {
         <header>
           <div className="nav-cont">
             <Link className="nav-icon" to="/home">
-              <i className="fa-solid fa-shop fa-2x"></i>
+            <i class="fa-solid fa-crown fa-2x"></i>
             </Link>
 
             <div id="navbarNav">
@@ -44,7 +44,12 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                <i class="fa-solid fa-box-open nav-item"><sup>1</sup></i>
+                  <Link className="nav-link" to="/history">
+                    Order History
+                  </Link>
+                </li>
+                <li className="nav-item">
+                <i className="fa-solid fa-box-open nav-item"><sup>{profile.countProduct}</sup></i>
                 </li>
                 <li className="nav-item">
                 <Link to="/profile" className="nav-link">
@@ -53,7 +58,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                 <Link to="/login" className="nav-link">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <i className="fa-solid fa-arrow-right-from-bracket"></i>
                 </Link>
                 </li>
               </ul>

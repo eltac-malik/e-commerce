@@ -1,9 +1,19 @@
 import react from "react";
+import {useNavigate} from "react-router-dom";
+import  Context from "../context/Context";
 
 function Modal(props) {
   console.log(props.data.price);
   
-  
+  const x = useNavigate(Context);
+
+
+
+  const func = () =>
+  {
+    console.log(x.currentuser)
+  }
+
   return (
     <div >
 
@@ -26,7 +36,7 @@ function Modal(props) {
           <h4> COUNT : {props.data.alt}</h4>
         </div>
         <div className="modal-footer">
-         <button className="btn ab-btn btn-danger">Add</button>
+         <button onClick={func}  className="btn ab-btn btn-danger">Add</button>
         </div>
       </div>
     </div>

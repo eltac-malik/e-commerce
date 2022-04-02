@@ -10,6 +10,7 @@ import {BrowserRouter as Router,Routes,Route,Link,Navigate
 import { Prov, ProvLog } from './context/Context';
 import LogIn from './components/LogIn';
 import Profile from './components/Profile/Profile';
+import History from './components/History/History';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Route path="/product" element={<Product/>}/>
         <Route path="/men" element={<Men/>}/>
         <Route path="/profile" element={<Profile/>}/>
-        
+        <Route path="/history" element={<History/>}/>
         </Routes>
        <Footer/>
       </Router>

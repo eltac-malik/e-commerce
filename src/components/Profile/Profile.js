@@ -22,7 +22,7 @@ function Profile() {
                     <div className="mt-3">
                       <h4>{usrdata.currentuser.first_name} {usrdata.currentuser.last_name}</h4>
                       <p className="text-secondary mb-1">{usrdata.currentuser.email}</p>
-                      <button class="btn btn-primary">E d i t</button>
+                      <button className="btn btn-primary">E d i t</button>
                     </div>
                   </div>
                 </div>

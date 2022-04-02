@@ -3,7 +3,6 @@ import {BrowserRouter as Router,Routes,Route,Link,useNavigate
 } from "react-router-dom";
 import  Context from "../context/Context";
 import Modal from "./Modal";
-import ModalAbout from "./Modal";
 
 function Product() {
 
@@ -13,8 +12,15 @@ function Product() {
   const [isModal,setisModal] = useState(false);
   
   const [search,setSearch] = useState("");
-  
 
+
+
+  
+  const forbtn = (e) =>
+  {
+    product.setCountProduct((product.countProduct)+1)
+    e.stopPropagation()
+  }
 
 
   return (
@@ -59,7 +65,7 @@ function Product() {
                         <h4 className="card-title c-title">{e.title}</h4>
                         <h5 className="card-text c-text">
                             {e.price} AZN
-                            <button className="btn btn-danger">Add</button>
+                            <button onClick={forbtn} className="btn btn-danger">Add</button>
                         </h5>
                       </div>
                     </div>
