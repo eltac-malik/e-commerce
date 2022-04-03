@@ -1,25 +1,23 @@
 import './App.css';
-import Nav from './components/Navbar'
 import Head from './components/Head';
 import Product from './components/Product';
 import Men from './components/Men';
-import Footer from './components/Footer';
-import About from './components/About';
-import {BrowserRouter as Router,Routes,Route,Link,Navigate
+import {BrowserRouter as Router,Routes,Route,Navigate
 } from "react-router-dom";
-import { Prov } from './context/Context';
 import LogIn from './components/LogIn';
 import Profile from './components/Profile/Profile';
 import History from './components/History/History';
 import Cart from './components/Cart/Cart';
+import Layout from './components/Layout';
 
 function App() {
+
+
   return (
     <div className="App">
-
-   <Prov>
+     
     <Router>
-      <Nav/>
+    <Layout>
         <Routes>  
         <Route path="/" element={<Navigate replace to="/login" />} /> 
         <Route path='/login' element = {<LogIn/>}></Route>
@@ -30,9 +28,9 @@ function App() {
         <Route path="/history" element={<History/>}/>
         <Route path="/cart" element={<Cart/>}/>
         </Routes>
-       <Footer/>
-      </Router>
-    </Prov>
+    </Layout>
+    </Router>
+       
 
     </div>
   );

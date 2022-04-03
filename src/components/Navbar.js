@@ -59,7 +59,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                 <Link to="/login" className="nav-link">
-                <i className="fa-solid fa-arrow-right-from-bracket"></i>
+                <i onClick={()=> profile.setIsLogged(false)} className="fa-solid fa-arrow-right-from-bracket"></i>
                 </Link>
                 </li>
               </ul>

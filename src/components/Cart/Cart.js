@@ -1,15 +1,22 @@
-import {useContext} from 'react'
+import {useContext,useState,useEffect} from 'react'
 import "./Cart.css"
 import Context from '../../context/Context'
 
 function Cart() {
 
     const ordr = useContext(Context)
+    const [price,setPrice] = useState(0);
 
-    const delcart = (item) =>
+    useEffect(()=>
     {
-        console.log(item)
-    }
+        let total = 0;
+        ordr.cartItems.forEach((item)=>
+        {
+            total = total+item.price;
+        })
+        setPrice(total)
+    },[ordr.cartItems])
+
 
   return (
     <div>
@@ -20,10 +27,10 @@ function Cart() {
             <div className="product-details mr-2">
                 <div className="d-flex flex-row align-items-center"><i className="fa fa-long-arrow-left px-3"></i><span className="fs-4 ml-2">Continue Shopping</span></div>
 
-                {ordr.cartItems.map((item)=>
+                {ordr.cartItems.map((item,i)=>
                 {
                     return(
-                        <div key={item.id} className="cart-p">
+                        <div key={i} className="cart-p">
                         <img src={item.image} alt="" />
                         <div className="product-info">
                             <h2>{item.title}</h2>
@@ -32,8 +39,7 @@ function Cart() {
                         </div>
                         <i onClick={(e)=>
                         {
-                            ordr.cartItems.splice(item.id,1);
-                            console.log(item.id)
+                            ordr.removeFromCart(item.id) 
                             e.stopPropagation()
                         }} className="fa-solid fa-2x fa-trash-can"></i>
                     </div>
@@ -42,8 +48,6 @@ function Cart() {
                 }
             </div>
         </div>
-
-
 
 
     {/* Payment */}
@@ -55,7 +59,7 @@ function Cart() {
                     <div className="col-md-6"><label className="credit-card-label">CVV</label><input type="text" className="form-control credit-inputs" placeholder="342"/></div>
                 </div>
                 <hr className="line"/>
-                <div className="d-flex justify-content-between information"><h4>Subtotal</h4><h4>$3000.00</h4></div>
+                <div className="d-flex justify-content-between information"><h4>Subtotal</h4><h4>${price.toFixed(2)}</h4></div>
                 <div className="d-flex justify-content-between information"><h4>Shipping</h4><h4>$20.00</h4></div>
                 <div className="d-flex justify-content-between information"><h4>Total</h4><h4>$3020.00</h4></div>
                 <button className="btn btn-primary btn-sell" type="button"><h4>$3020.00</h4><h4>Checkout<i className="fa fa-long-arrow-right ml-1"></i></h4></button>

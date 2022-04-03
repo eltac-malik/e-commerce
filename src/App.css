@@ -488,3 +488,14 @@ background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 {
   color: black;
 }
+
+.bg-body
+{
+  width: 100%;
+  height: 100vh;
+}
+
+body
+{
+  margin: 0 !important;
+}

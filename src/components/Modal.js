@@ -29,7 +29,7 @@ function Modal(props) {
           <h4> COUNT : {props.data.alt}</h4>
         </div>
         <div className="modal-footer">
-         <button onClick={()=> x.countbtn(props.data)}  className="btn ab-btn btn-danger">Add</button>
+         <button onClick={()=> x.countPlusbtn(props.data)}  className="btn ab-btn btn-danger">Add</button>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ export const Prov = ({children}) =>
     }, []);
 
 
-    // users
+    const [isLogged,setIsLogged] = useState(false);
 
     
     const [users, setUsers] = useState("");
@@ -23,18 +23,17 @@ export const Prov = ({children}) =>
 
     const [cartItems,setCartItems] = useState([]);
 
+    const removeFromCart = (x) =>
+    {
+      let filtered = cartItems.filter(item => item.id !== x);
+      setCartItems(filtered)
+      setCountProduct(countProduct-1);
+    }
 
-
-    // const [orders,setOrders] = useState([]);
-    // const orderHistory = () =>
-    // {
-    //   setOrders([...orders,cartItems])
-    //   setCartItems([]);
-    // }
 
     const [countProduct,setCountProduct] = useState(0);
 
-    const countbtn = (item) =>
+    const countPlusbtn = (item) =>
     {
       setCountProduct(countProduct+1)
       setCartItems([...cartItems,item])
@@ -49,7 +48,7 @@ export const Prov = ({children}) =>
     },[])
     
     
-    const values = {data,users,setCurrentuser,currentuser,countbtn,countProduct,cartItems}
+    const values = {data,users,setCurrentuser,currentuser,countPlusbtn,countProduct,cartItems,removeFromCart,isLogged,setIsLogged}
     
 
   return <Context.Provider value={values}>{children}</Context.Provider>

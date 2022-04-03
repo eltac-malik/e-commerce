@@ -22,6 +22,7 @@ function LogIn() {
       {
         navigate("/home");
         user.setCurrentuser(e);
+        user.setIsLogged(true);
 
       }
     });

@@ -59,7 +59,7 @@ function Product() {
                             {item.price} AZN
                             <button onClick={(e)=>
                             {
-                              product.countbtn(item)
+                              product.countPlusbtn(item)
                               e.stopPropagation();
                             }} className="btn btn-danger">Add</button>
                         </h5>
