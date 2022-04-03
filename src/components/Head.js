@@ -37,30 +37,30 @@ function Head() {
     </a>
   </div> */}
     
-    <div id="carouselExampleIndicators" class="carousel slide" data-interval="2000" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <div id="carouselExampleIndicators" className="carousel slide" data-interval="2000" data-ride="carousel">
+  <ol className="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src={banner} alt="First slide"/>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img className="d-block w-100" src={banner} alt="First slide"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://i.ytimg.com/vi/QcuPWvp78DQ/maxresdefault.jpg" alt="Second slide"/>
+    <div className="carousel-item">
+      <img className="d-block w-100" src="https://i.ytimg.com/vi/QcuPWvp78DQ/maxresdefault.jpg" alt="Second slide"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://www.marketingturkiye.com.tr/wp-content/uploads/2020/02/redbull.jpg" alt="Third slide"/>
+    <div className="carousel-item">
+      <img className="d-block w-100" src="https://www.marketingturkiye.com.tr/wp-content/uploads/2020/02/redbull.jpg" alt="Third slide"/>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
   </a>
 </div>
 

@@ -1,18 +1,11 @@
-import react from "react";
-import {useNavigate} from "react-router-dom";
+import {useContext} from "react";
 import  Context from "../context/Context";
 
 function Modal(props) {
-  console.log(props.data.price);
   
-  const x = useNavigate(Context);
+  const x = useContext(Context);
 
 
-
-  const func = () =>
-  {
-    console.log(x.currentuser)
-  }
 
   return (
     <div >
@@ -25,7 +18,7 @@ function Modal(props) {
       <div className="modal-content">
         <div className="mod-header">
           <h2 className="modal-title">INFO</h2>
-          <i class="fa-solid fa-xmark fa-2x" data-dismiss="modal"></i>
+          <i className="fa-solid fa-xmark fa-2x" data-dismiss="modal"></i>
         </div>
         <div className="modal-body">
           <img src={props.data.image} alt=""/>
@@ -36,7 +29,7 @@ function Modal(props) {
           <h4> COUNT : {props.data.alt}</h4>
         </div>
         <div className="modal-footer">
-         <button onClick={func}  className="btn ab-btn btn-danger">Add</button>
+         <button onClick={()=> x.countbtn(props.data)}  className="btn ab-btn btn-danger">Add</button>
         </div>
       </div>
     </div>

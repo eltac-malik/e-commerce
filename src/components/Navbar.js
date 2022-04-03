@@ -19,11 +19,10 @@ function Navbar() {
 
   return (
     <div>
-      <div>
-        <header>
+        <header className="header">
           <div className="nav-cont">
             <Link className="nav-icon" to="/home">
-            <i class="fa-solid fa-crown fa-2x"></i>
+            <i className="fa-solid fa-crown fa-2x"></i>
             </Link>
 
             <div id="navbarNav">
@@ -49,7 +48,9 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
+                <Link className="nav-link" to="/cart">
                 <i className="fa-solid fa-box-open nav-item"><sup>{profile.countProduct}</sup></i>
+                  </Link>
                 </li>
                 <li className="nav-item">
                 <Link to="/profile" className="nav-link">
@@ -65,7 +66,6 @@ function Navbar() {
             </div>
           </div>
         </header>
-      </div>
     </div>
   );
 }

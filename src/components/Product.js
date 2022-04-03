@@ -15,21 +15,13 @@ function Product() {
 
 
 
-  
-  const forbtn = (e) =>
-  {
-    product.setCountProduct((product.countProduct)+1)
-    e.stopPropagation()
-  }
-
-
   return (
     <div>
       {isModal && <Modal data={aboutdata} closeModal={()=>{setisModal(false)}} />}
 
         <div className="filter">
           <div className="input">
-            <input type="text" placeholder="Search Product" onChange={e => setSearch(e.target.value)}/>
+            <input type="text" placeholder="Search Product" onChange={item => setSearch(item.target.value)}/>
             </div>
         </div>
       <section id="products" className="container mt-5">
@@ -47,25 +39,29 @@ function Product() {
               {
                   return val;
               }
-            }).map((e)=>
+            }).map((item)=>
             {
                 return(
-                    <div key={e.id} className="col mb-4">
+                    <div key={item.id} className="col mb-4">
                     <div className="card c"
                      data-toggle="modal" data-target="#myModal"
-                     onClick={()=> {setAboutdata({id:e.id,price:e.price,title:e.title,image:e.image,alt:e.alt,category:e.category})
+                     onClick={()=> {setAboutdata({id:item.id,price:item.price,title:item.title,image:item.image,alt:item.alt,category:item.category})
                      setisModal(true)
                   }} >
                       <img
-                        src={e.image}
+                        src={item.image}
                         className="card-img-top"
                         alt="..."
                       />
                       <div className="card-body c-body">
-                        <h4 className="card-title c-title">{e.title}</h4>
+                        <h4 className="card-title c-title">{item.title}</h4>
                         <h5 className="card-text c-text">
-                            {e.price} AZN
-                            <button onClick={forbtn} className="btn btn-danger">Add</button>
+                            {item.price} AZN
+                            <button onClick={(e)=>
+                            {
+                              product.countbtn(item)
+                              e.stopPropagation();
+                            }} className="btn btn-danger">Add</button>
                         </h5>
                       </div>
                     </div>

@@ -18,9 +18,27 @@ export const Prov = ({children}) =>
 
     
     const [users, setUsers] = useState("");
+
     const [currentuser,setCurrentuser] = useState([]);
 
+    const [cartItems,setCartItems] = useState([]);
+
+
+
+    // const [orders,setOrders] = useState([]);
+    // const orderHistory = () =>
+    // {
+    //   setOrders([...orders,cartItems])
+    //   setCartItems([]);
+    // }
+
     const [countProduct,setCountProduct] = useState(0);
+
+    const countbtn = (item) =>
+    {
+      setCountProduct(countProduct+1)
+      setCartItems([...cartItems,item])
+    }
  
     useEffect(()=>{
       axios
@@ -31,7 +49,7 @@ export const Prov = ({children}) =>
     },[])
     
     
-    const values = {data,users,setCurrentuser,currentuser,countProduct,setCountProduct}
+    const values = {data,users,setCurrentuser,currentuser,countbtn,countProduct,cartItems}
     
 
   return <Context.Provider value={values}>{children}</Context.Provider>

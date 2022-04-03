@@ -7,10 +7,11 @@ import Footer from './components/Footer';
 import About from './components/About';
 import {BrowserRouter as Router,Routes,Route,Link,Navigate
 } from "react-router-dom";
-import { Prov, ProvLog } from './context/Context';
+import { Prov } from './context/Context';
 import LogIn from './components/LogIn';
 import Profile from './components/Profile/Profile';
 import History from './components/History/History';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/men" element={<Men/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/history" element={<History/>}/>
+        <Route path="/cart" element={<Cart/>}/>
         </Routes>
        <Footer/>
       </Router>

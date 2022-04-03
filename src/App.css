@@ -365,6 +365,15 @@ h1{
   position: sticky;
 }
 
+.header{
+  width: 100%;
+}
+
+.footer-section
+{
+  width: 100%;
+}
+
 .nav-icon
 {
   height: 70px;
