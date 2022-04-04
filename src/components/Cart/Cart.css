@@ -1,11 +1,13 @@
 .payment-info {
-    background: blue;
+    background: linear-gradient(135deg, #70303d, #af374b);
     padding: 10px;
     border-radius: 6px;
     color: #fff;
     font-weight: bold;
     overflow: hidden;
     padding-top: 50px;
+    margin: 0 10px;
+    margin-top: 5px;
 }
 .payment-info img
 {
@@ -24,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: linear-gradient(135deg, #4d262e, #af374b);
 }
 
 .product-details {
@@ -45,6 +48,17 @@ body {
 .table-shadow {
     -webkit-box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
     box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42)
+}
+
+.btn-danger
+{
+    background-color: purple !important;
+    border: none;
+}
+.btn-danger:hover
+{
+    color: purple;
+    border: 1px solid purple;
 }
 
 .type {
@@ -155,6 +169,7 @@ label.radio input:checked+span {
 .fa-trash-can
 {
     padding: 15px;
+    margin: 0 5px;
     border-radius: 10px;
     border: 1px solid silver;
 }
@@ -185,4 +200,40 @@ label.radio input:checked+span {
     height: 500px;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+.count
+{
+    width: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    padding-top: 10px
+}
+
+.count h1{
+    padding-top: 9px;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.arrow
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow i
+{
+    color: purple;
+}
+
+.arrow i:hover
+{
+    color: #d769f8;
+    transition: 0.3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

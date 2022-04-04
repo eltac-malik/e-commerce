@@ -1,6 +1,8 @@
 import {useContext,useState,useEffect} from 'react'
 import "./Cart.css"
 import Context from '../../context/Context'
+import {BrowserRouter as Router,Routes,Route,Navigate,Link
+} from "react-router-dom";
 
 function Cart() {
 
@@ -25,7 +27,11 @@ function Cart() {
     <div className="row no-gutters">
         <div className="col-md-8">
             <div className="product-details mr-2">
-                <div className="d-flex flex-row align-items-center"><i className="fa fa-long-arrow-left px-3"></i><span className="fs-4 ml-2">Continue Shopping</span></div>
+            
+                <div className="d-flex flex-row align-items-center">
+                <i className="fa fa-long-arrow-left px-3"></i>
+                <span className="fs-4 ml-2">Continue Shopping</span>
+                </div>
 
                 {ordr.cartItems.map((item,i)=>
                 {
@@ -36,6 +42,13 @@ function Cart() {
                             <h2>{item.title}</h2>
                             <h3>{item.price}</h3>
                             <h4>{item.alt}</h4>
+                        </div>
+                        <div className="count">
+                            <div className="arrow">
+                            <i class="fa-solid fa-2x fa-caret-up"></i>
+                            <i class="fa-solid fa-2x fa-caret-down"></i>
+                            </div>
+                            <h1>X 1</h1>
                         </div>
                         <i onClick={(e)=>
                         {
@@ -60,9 +73,9 @@ function Cart() {
                 </div>
                 <hr className="line"/>
                 <div className="d-flex justify-content-between information"><h4>Subtotal</h4><h4>${price.toFixed(2)}</h4></div>
-                <div className="d-flex justify-content-between information"><h4>Shipping</h4><h4>$20.00</h4></div>
-                <div className="d-flex justify-content-between information"><h4>Total</h4><h4>$3020.00</h4></div>
-                <button className="btn btn-primary btn-sell" type="button"><h4>$3020.00</h4><h4>Checkout<i className="fa fa-long-arrow-right ml-1"></i></h4></button>
+                <div className="d-flex justify-content-between information"><h4>Shipping</h4><h4>${(price.toFixed(2)/10).toFixed(2)}</h4></div>
+                <div className="total information"><h4 className="pt-4">Total</h4><h3>${(price + price/10).toFixed(2)}</h3></div>
+                <button className="btn btn-primary btn-sell" type="button"><h4>${(price + price/10).toFixed(2)}</h4><h4>Checkout<i className="fa fa-long-arrow-right ml-1"></i></h4></button>
             </div>
         </div>
     </div>

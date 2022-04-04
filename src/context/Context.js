@@ -26,7 +26,7 @@ export const Prov = ({children}) =>
     const removeFromCart = (x) =>
     {
       let filtered = cartItems.filter(item => item.id !== x);
-      setCartItems(filtered)
+      setCartItems(filtered);
       setCountProduct(countProduct-1);
     }
 
@@ -34,9 +34,11 @@ export const Prov = ({children}) =>
     const [countProduct,setCountProduct] = useState(0);
 
     const countPlusbtn = (item) =>
-    {
-      setCountProduct(countProduct+1)
-      setCartItems([...cartItems,item])
+    {   
+
+          setCountProduct(countProduct+1)
+          setCartItems([...cartItems,item])
+    
     }
  
     useEffect(()=>{
